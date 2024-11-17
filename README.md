@@ -19,13 +19,13 @@ Changed a bit the structure for first experiments with CrewAI.
 - Clone the repo
 
 ```bash
-git clone __TODO__
+git clone https://github.com/flobotde/ollama_streamlit_playground.git
 ```
 
 - change dir 
 
 ```bash
-cd igl-po-vision/
+cd ollama_streamlit_playground/
 ```
 
 - install requirements
@@ -42,14 +42,14 @@ cp example.env .env
 ## Run
 
 ```bash
-streamlit run Home.py
+streamlit run 1_🏡_Home.py
 ```
 
 Visit http://localhost:8501/ (if it doesn't open on it's own)
 
 ## Run with docker
 
--TBD
+-TBDoc
 
 ## Known Bugs
 
