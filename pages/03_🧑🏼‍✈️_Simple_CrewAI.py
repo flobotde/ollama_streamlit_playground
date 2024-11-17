@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 page_icon("🧑🏼‍✈️")
-st.subheader("Crew AI Chat", divider="red", anchor=False)
+st.subheader("Simple Researcher & Summarizer Agent Crew", divider="red", anchor=False)
 
 message_container = st.container(height=300, border=True)
 
