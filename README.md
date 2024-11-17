@@ -54,3 +54,4 @@ Visit http://localhost:8501/ (if it doesn't open on it's own)
 ## Known Bugs
 
 - Often see AttributeError: st.session_state has no attribute "selected_model", but it works with a little patience
+- Docker with a running ollama on mac not working a.t.m.

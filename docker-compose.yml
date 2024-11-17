@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://0.0.0.0:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: ["streamlit", "run", "1_🏡_Home.py", "--server.port=8501", "--server.address=0.0.0.0"]
