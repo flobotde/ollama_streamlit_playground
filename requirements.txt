@@ -1,0 +1,7 @@
+python-dotenv
+ollama
+streamlit==1.33.0
+pydantic_settings
+openai
+crewai
+duckduckgo-search

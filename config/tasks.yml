@@ -1,0 +1,25 @@
+# config/tasks.yml
+research_task:
+  description: >
+    Führen Sie eine gründliche Recherche zum Thema {topic} durch.
+    Berücksichtigen Sie dabei aktuelle Entwicklungen und relevante
+    Informationen aus dem Jahr 2024. Sammeln Sie vielfältige und
+    zuverlässige Quellen.
+  expected_output: >
+    Eine Liste mit 10 Stichpunkten der wichtigsten und aktuellsten
+    Informationen über {topic}, einschließlich Quellenangaben.
+  agent: researcher
+
+summarize_task:
+  description: >
+    Überprüfen Sie die Rechercheergebnisse zum Thema {topic} und
+    erstellen Sie eine allgemein verständliche Zusammenfassung.
+    Erklären Sie komplexe Sachverhalte in einfacher Sprache und
+    heben Sie die Hauptpunkte hervor.
+  expected_output: >
+    Eine klar strukturierte, leicht verständliche Zusammenfassung
+    zu {topic} im Markdown-Format, ohne Code-Block-Markierungen.
+    Die Zusammenfassung sollte die wichtigsten Erkenntnisse enthalten
+    und für ein breites Publikum geeignet sein.
+  agent: summarizer
+  #output_file: app-data/summarize-{topic}.md
