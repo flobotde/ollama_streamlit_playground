@@ -16,7 +16,7 @@ from langchain.tools import DuckDuckGoSearchRun
 # ...or create your own and uncomment the following line to use an example of a custom tool
 # from tools.custom_tool import MyCustomTool
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import List, Optional
 
 # Select your websearch Engine (s. https://python.langchain.com/docs/integrations/tools/)
