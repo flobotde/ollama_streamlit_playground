@@ -7,17 +7,20 @@ import streamlit as st
 from streamlit import expander
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-#from langchain_community.tools import DuckDuckGoSearchRun
 
-# Uncomment the following line to use an example of a custom tool
-# from surprise_travel.tools.custom_tool import MyCustomTool
+from langchain.tools import DuckDuckGoSearchRun
 
-# Check our tools documentation for more information on how to use them
+
+# Check crewai tools documentation for more information on how to use them
 #from crewai_tools import SerperDevTool, ScrapeWebsiteTool
+# ...or create your own and uncomment the following line to use an example of a custom tool
+# from tools.custom_tool import MyCustomTool
+
 from pydantic import BaseModel, Field
 from typing import List, Optional
 
-#websearch_tool = DuckDuckGoSearchRun()
+# Select your websearch Engine (s. https://python.langchain.com/docs/integrations/tools/)
+websearch_tool = DuckDuckGoSearchRun()
 
 #display the console processing on streamlit UI
 # coffee goes to https://github.com/AbubakrChan/crewai-UI-business-product-launch/blob/main/main.py
@@ -88,7 +91,7 @@ class ResearcherCrew:
                 llm=model, # fixme for not ollama
                 config=self.agents_config['researcher'],
                 verbose=True,
-#               tools=[websearch_tool],
+                tools=[websearch_tool],
             )
         except Exception as e:
             st.error(
