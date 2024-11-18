@@ -1,7 +1,8 @@
 # OLLAMA Streamlit playground (ext)
 
 This is a fork of the idea from ☕️ [Ollama x Streamlit Playground](https://github.com/tonykipkemboi/ollama_streamlit_demos)
-Changed a bit the structure for first experiments with CrewAI.
+
+I changed a bit the structure for my first experiments with CrewAI.
 
 ## Prerequisites
 
@@ -10,7 +11,8 @@ Changed a bit the structure for first experiments with CrewAI.
 * (optional) docker 
 
 ## Technology Stack and Features
-- 🚀 [CrewAI](https://https://crewai.com/) for AI.
+- 💬 [Ollama](https://ollama.com/) as AI model Server 
+- 🚀 [CrewAI](https://https://crewai.com/) for AI Crew Example. (s. utils/crew.py and config/agents.yml und tasks.yml to change)
 - 🪟 [Streamlit](https://https://streamlit.io/) for the frontend.
 - 🐋 [Docker](https://www.docker.com) for running in a container
 
